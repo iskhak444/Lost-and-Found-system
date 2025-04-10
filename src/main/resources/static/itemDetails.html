@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details | Lost & Found</title>
+    <link rel="stylesheet" href="./css/itemDetail.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Lost & Found System</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Report Items</li>
+                <li class="nav-item">Search Items</li>
+                <li class="nav-item">Profile Settings</li>
+                <li class="nav-item">Help Center</li>
+                <li id="logout" class="nav-item">Log Out</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="welcome-section">
+                <h1>Item Details</h1>
+                <div class="item-details-header">
+                    <button id="back-btn">
+                        <img src="./images/grey.png" alt="Back" class="back-arrow"> Back
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- Item Details -->
+            <div class="item-details">
+                <div class="item-images">
+                    <img src="./images/front1.jpg" alt="Item Image" class="main-image">
+                    <div class="thumbnail-gallery">
+                        <img id="backup1" src="./images/front2.jpg" alt="Thumbnail 1">
+                        <img id="backup2" src="./images/front2.jpg" alt="Thumbnail 2">
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h2 id="itemName">Black Leather Wallet</h2>
+                    <p id="itemId"><strong>Item Name:</strong> </p>
+                    <p id="itemType"><strong>Item Type:</strong> </p>
+                    <p id="itemStatus"><strong>Status:</strong> </p>
+                    <p id="itemDescription"><strong>Description:</strong> </p>
+                    <p id="itemLocation"><strong>Location:</strong> </p>
+                    <p id="itemDate"><strong>Date Lost/Found:</strong> </p>
+                    <p><strong>Reported By:</strong> <a href="#">Jacob Smith</a></p>
+                    <button class="action-btn">Claim Item</button>
+                    <button id="email-btn" class="action-btn">Email User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "./js/script.js"></script>
+    <script src = "./js/itemDetail.js"></script>
+</body>
+</html>
